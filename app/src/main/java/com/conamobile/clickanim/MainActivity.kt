@@ -2,6 +2,7 @@ package com.conamobile.clickanim
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.conamobile.clickanim.ClickAnim.click
 import com.conamobile.clickanim.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,6 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.myButton
+        binding.myButton.click{}
     }
 }
